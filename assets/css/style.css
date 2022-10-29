@@ -1,0 +1,51 @@
+
+
+@import url('http://fonts.cdnfonts.com/css/f-feeling-soon');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background: rgb(130,240,241);
+    background: linear-gradient(0deg, rgba(130,240,241,1) 0%, rgba(25,23,52,1) 100%);
+    color: aliceblue;
+}
+
+
+
+#contenedor {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    border: 1PX solid black;
+    padding: 40px 80px ;
+    border-radius: 15px;
+    background-color: darkgoldenrod;
+    -webkit-box-shadow: 17px 18px 37px -4px rgba(0,0,0,0.51);
+    -moz-box-shadow: 17px 18px 37px -4px rgba(0,0,0,0.51);
+    box-shadow: 17px 18px 37px -4px rgba(0,0,0,0.51);
+    margin: 2em ;
+}
+
+h1 {
+    border-bottom: 1px solid cyan;
+    border-top: 1px solid cyan;
+    padding: 1em;
+    text-shadow: cyan 1px 0 10px;
+    
+}
+
+button {
+    padding: .3em 2em;
+    background-color: rgb(24, 66, 76);
+    color: aliceblue;
+}
+
