@@ -38,7 +38,6 @@ async function getMoneda(){
         const res = await fetch(apiURL);
         const data = await res.json()
         return data;
-        /* console.log(data); */
     }
     catch (error) {
         alert(error.message)
@@ -63,7 +62,6 @@ async function calculoMoneda () {
                 document.querySelector('#resultado').innerHTML = resultado;     
             }
         }  
-        /* formulario.reset (); */
     }
 
   
@@ -86,7 +84,7 @@ async function renderMonedas() {
 
 
 async function grafico(codigo) {
-    /* const datos = await getMoneda(); */
+
     const res = await fetch(`https://mindicador.cl/api/${codigo}`);
     const dataFechas = await res.json()
     let datosMoneda =  Object.values (dataFechas.serie);
@@ -99,10 +97,9 @@ async function grafico(codigo) {
 
     }
     labels = labels.slice(0, 10)
+    console.log(labels);
     valores = valores.slice(0, 10)
     
-
-  
     const data = {
       labels: labels,
       datasets: [{
@@ -123,10 +120,4 @@ async function grafico(codigo) {
     chartGraph,
     config
     );
-    console.log(select.value);
-
-
- 
-
-  
 }
